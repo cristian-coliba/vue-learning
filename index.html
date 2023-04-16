@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li v-for="link in links" class="nav-item active">
-            <a class="nav-link" href="#">{{ link }} {{ linkAdditional }}</a>
+            <a class="nav-link" href="#">{{ link }}</a>
           </li>
         </ul>
       </div>
@@ -44,7 +44,6 @@
         data() {
           return {
             links: ["Home", "About", "Content"],
-            linkAdditional: "🤘",
           };
         },
       }).mount("nav");
